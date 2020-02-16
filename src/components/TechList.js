@@ -3,6 +3,14 @@ import React, { Component } from 'react';
 import TechItem from './TechItem';
 
 class TechList extends Component {
+  // static propTypes = {
+  //    propriedade: PropTypes.tipo.validação;
+  // };
+
+  // static defaultProps = {
+  //   propriedade: 'valor default'
+  // };
+
   state = {
     newTech: '',
     techs: [
@@ -38,6 +46,7 @@ class TechList extends Component {
               onDelete={() => this.handleDelete(tech)} 
             />
             ))}
+            <TechItem />
         </ul>
         <input 
           type="text" 
